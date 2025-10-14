@@ -1,5 +1,5 @@
 from typing import Dict
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 import sqlalchemy as sa
 from .models import Sales
 import app
@@ -35,7 +35,12 @@ def sales_per_day(date: str) -> Dict:
         query = sa.select(Sales).where(Sales.date == date)
         row = connection.execute(query).fetchone()
 
-        report = {row[1]: {f"nmId_{row[2]}": {"price": row[3]}}}
+        if row is not None:
+            report = {row[1]: {f"nmId_{row[2]}": {"price": row[3]}}}
+        else:
+            raise HTTPException(
+                status_code=404, detail=f"There is no sale with date '{date}'"
+            )
 
         connection.commit()
 
