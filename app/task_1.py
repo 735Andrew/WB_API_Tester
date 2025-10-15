@@ -1,4 +1,5 @@
 from typing import Dict
+import datetime
 import requests as r
 from sqlalchemy import text
 from config import WB_TOKEN
@@ -8,13 +9,16 @@ from app import engine
 def report_creator() -> Dict:
     URL = "https://statistics-api-sandbox.wildberries.ru/api/v1/supplier/sales?"
 
-    date = "2025-09-29"  # todo change date creation
+    # Calculating the start of two weeks period
+    today = datetime.date.today()
+    start_of_current_week = today - datetime.timedelta(days=today.weekday())
+    start_of_two_weeks_ago = start_of_current_week - datetime.timedelta(days=14)
 
     sales = r.get(
         URL,
         headers={"Authorization": WB_TOKEN},
         params={
-            "dateFrom": f"{date}",
+            "dateFrom": f"{start_of_two_weeks_ago}",
             "flag": 0,
         },
     ).json()
