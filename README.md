@@ -1,18 +1,18 @@
-
 <div>
 <h3>Local Installation</h3>
-<br>
-<svg width="200" height="20" xmlns="http://www.w3.org/2000/svg">
-  <text x="0" y="15" font-size="17" fill="yellowgreen">Prerequisites:</text>
-</svg>
-<br><br>
-Python 3.9+ ; PostgreSQL16+ 
-<br><br><br>
+<hr>
 
-<svg width="200" height="20" xmlns="http://www.w3.org/2000/svg">
-  <text x="0" y="15" font-size="17" fill="yellowgreen">Project deployment:</text>
-</svg>
+<h3>
+${\textsf{\color{yellowgreen}Prerequisites:}}$
+</h3>
+<br>
+Python 3.9+ ; PostgreSQL16+
 <br><br>
+
+<h3>
+${\textsf{\color{yellowgreen}Project deployment:}}$
+</h3>
+<br>
 Open a terminal and run the following commands:
 
 ```bash
