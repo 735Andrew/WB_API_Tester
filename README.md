@@ -2,12 +2,16 @@
 <div>
 <h3>Local Installation</h3>
 <br>
-<span style="color:yellowgreen;font-size: 15px">Prerequisites:</span><br>
+<svg width="200" height="20" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="15" font-size="17" fill="yellowgreen">Prerequisites:</text>
+</svg>
+<br><br>
+Python 3.9+ ; PostgreSQL16+ 
+<br><br><br>
 
-Python 3.9+ ; PostgreSQL16+
-
-<br>
-<span style="color:yellowgreen;font-size: 15px">Project deployment:</span>
+<svg width="200" height="20" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="15" font-size="17" fill="yellowgreen">Project deployment:</text>
+</svg>
 <br><br>
 Open a terminal and run the following commands:
 
