@@ -1,3 +1,19 @@
+<h2>WB_API_Tester</h2>
+<br>
+<div>
+<b>This project provides an API service that allows users to:</b>
+<ul>
+<li>Have a look and go deeper into Wildberries API workflow.</li>
+<li>Take and store required data from Wildberries in your local machine.</li>
+<li>Create professionally formatted output upon request.</li>
+</ul>
+</div>
+<br>
+:milky_way:<b>Tech Stack</b>:milky_way:<br>
+Python, FastAPI, SQLAlchemy, PostgreSQL
+<br><br>
+<hr>
+
 <div>
 <h3>Local Installation</h3>
 <hr>
